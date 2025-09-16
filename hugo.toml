@@ -1,0 +1,47 @@
+baseURL = 'https://sahb4k.github.io'
+languageCode = 'en-us'
+title = 'Security Research'
+theme = "PaperMod"
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  ShowReadingTime = true
+  ShowToc = true
+  defaultTheme = "auto"   # light/dark mode auto
+
+[taxonomies]
+  tag = "tags"
+  platform = "platform"
+
+# Top menu: we include a small `bg` parameter for each item for the hover-bg
+[[menu.main]]
+  name = "Home"
+  url  = "/"
+  weight = 1
+  params = { bg = "/images/nav/home.webp" }
+
+[[menu.main]]
+  name = "Writeups"
+  url  = "/writeups/"
+  weight = 2
+  params = { bg = "/images/nav/writeups.webp" }
+
+[[menu.main]]
+  name = "Projects"
+  url  = "/projects/"
+  weight = 3
+  params = { bg = "/images/nav/projects.webp" }
+
+[[menu.main]]
+  name = "Services"
+  url  = "/services/"
+  weight = 4
+  params = { bg = "/images/nav/services.webp" }
+
+[[menu.main]]
+  name = "About"
+  url  = "/about/"
+  weight = 5
+  params = { bg = "/images/nav/about.webp" }
