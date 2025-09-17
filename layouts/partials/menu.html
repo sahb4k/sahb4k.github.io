@@ -1,0 +1,10 @@
+{{ $currentPage := . }}
+   <ul id="menu">
+     {{ range .Site.Menus.main }}
+       <li>
+         <a href="{{ .URL | absURL }}" title="{{ .Name }}" data-bg="{{ .Params.bg | default "" }}">
+           <span{{ if $currentPage.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</span>
+         </a>
+       </li>
+     {{ end }}
+   </ul>

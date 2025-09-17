@@ -10,38 +10,55 @@ theme = "PaperMod"
   ShowReadingTime = true
   ShowToc = true
   defaultTheme = "auto"   # light/dark mode auto
+  [params.homeInfoParams]
+    Title = "Security Research"
+    Content = "Welcome to my blog on offensive security, CTFs, and more."
+  [params.profileMode]
+    enabled = true
+    title = "Security Research"
+    subtitle = "Hover over menu items to see previews."
+    imageUrl = "/images/nav/home.webp"  # Default home background
+    imageWidth = 120
+    imageTitle = "Home Background"
 
 [taxonomies]
-  tag = "tags"
-  platform = "platform"
+  tag = "tags"         # offensive/security tags and general tags
+  category = "categories"  # general grouping if needed
+  platform = "platforms"   # HTB, THM, CTF
+  difficulty = "difficulties"  # Easy, Medium, Hard
 
 # Top menu: we include a small `bg` parameter for each item for the hover-bg
 [[menu.main]]
   name = "Home"
-  url  = "/"
+  url = "/"
   weight = 1
-  params = { bg = "/images/nav/home.webp" }
+  [menu.main.params]
+    bg = "/images/nav/home.webp"
 
 [[menu.main]]
   name = "Writeups"
-  url  = "/writeups/"
+  url = "/writeups/"
   weight = 2
-  params = { bg = "/images/nav/writeups.webp" }
+  [menu.main.params]
+    bg = "/images/nav/writeups.webp"
 
 [[menu.main]]
   name = "Projects"
-  url  = "/projects/"
+  url = "/projects/"
   weight = 3
-  params = { bg = "/images/nav/projects.webp" }
+  [menu.main.params]
+    bg = "/images/nav/projects.webp"
 
 [[menu.main]]
   name = "Services"
-  url  = "/services/"
+  url = "/services/"
   weight = 4
-  params = { bg = "/images/nav/services.webp" }
+  [menu.main.params]
+    bg = "/images/nav/services.webp"
 
 [[menu.main]]
   name = "About"
-  url  = "/about/"
+  url = "/about/"
   weight = 5
-  params = { bg = "/images/nav/about.webp" }
+  [menu.main.params]
+    bg = "/images/nav/about.webp"
