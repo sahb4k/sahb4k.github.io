@@ -1,1 +1,28 @@
+# Hugo build output
 public/
+
+# Hugo cache and resources
+resources/
+hugo_*       # any temporary Hugo files
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE files
+*.swp
+*.swo
+*.swn
+*.idea/
+.vscode/
+
+# Node/npm (if used)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Logs
+*.log
+
+# Backup / temp
+*~
