@@ -7,19 +7,21 @@ theme = "PaperMod"
   pagerSize = 10
 
 [params]
+  disableHomeInfo = false
   ShowReadingTime = true
   ShowToc = true
   defaultTheme = "auto"   # light/dark mode auto
-  [params.homeInfoParams]
-    Title = "Security Research"
-    Content = "Welcome to my blog on offensive security, CTFs, and more."
-  [params.profileMode]
-    enabled = true
-    title = "Security Research"
-    subtitle = "Hover over menu items to see previews."
-    imageUrl = "/images/nav/home.webp"  # Default home background
-    imageWidth = 120
-    imageTitle = "Home Background"
+   [params.homeInfoParams]
+     Title = "Security Research"
+     Content = "Welcome to my blog on offensive security, CTFs, and more."
+#   [params.profileMode]
+#     enabled = true
+#     title = "Security Research"
+#     subtitle = "Hover over menu items to see previews."
+#     imageUrl = "/images/nav/home.webp"  # Default home background
+#     imageWidth = 120
+#     imageTitle = "Home Background"
+
 
 [taxonomies]
   tag = "tags"         # offensive/security tags and general tags
@@ -32,33 +34,33 @@ theme = "PaperMod"
   name = "Home"
   url = "/"
   weight = 1
-  [menu.main.params]
-    bg = "/images/nav/home.webp"
+#  [menu.main.params]
+#    bg = "/images/nav/home.webp"
 
 [[menu.main]]
   name = "Writeups"
   url = "/writeups/"
   weight = 2
-  [menu.main.params]
-    bg = "/images/nav/writeups.webp"
+#  [menu.main.params]
+#    bg = "/images/nav/writeups.webp"
 
 [[menu.main]]
   name = "Projects"
   url = "/projects/"
   weight = 3
-  [menu.main.params]
-    bg = "/images/nav/projects.webp"
+#  [menu.main.params]
+#    bg = "/images/nav/projects.webp"
 
 [[menu.main]]
   name = "Services"
   url = "/services/"
   weight = 4
-  [menu.main.params]
-    bg = "/images/nav/services.webp"
+#  [menu.main.params]
+#    bg = "/images/nav/services.webp"
 
 [[menu.main]]
   name = "About"
   url = "/about/"
   weight = 5
-  [menu.main.params]
-    bg = "/images/nav/about.webp"
+#  [menu.main.params]
+#    bg = "/images/nav/about.webp"
